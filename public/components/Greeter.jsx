@@ -1,6 +1,6 @@
 import React from 'react';
-import GreeterMessage from './GreeterMessage.jsx';
-import GreeterForm from './GreeterForm.jsx';
+import GreeterMessage from 'GreeterMessage';
+import GreeterForm from 'GreeterForm';
 
 export default class Greeter extends React.Component {
   constructor(props) {
