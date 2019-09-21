@@ -17,12 +17,15 @@ module.exports = {
   module: {
     rules: [
       {
-        loader: 'babel-loader',
-        query: {
-          presets: [ 'react', 'env' ]
-        },
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-proposal-object-rest-spread' ]
+          }
+        }
       }
     ]
   }
