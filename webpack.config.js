@@ -8,9 +8,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Greeter: path.resolve(__dirname, 'app/components/Greeter.jsx'),
-      GreeterMessage: path.resolve(__dirname, 'app/components/GreeterMessage.jsx'),
-      GreeterForm: path.resolve(__dirname,'app/components/GreeterForm.jsx')
+      Main: path.resolve(__dirname, 'app/components/main.jsx'),
+      Nav: path.resolve(__dirname, 'app/components/nav.jsx')
     },
     extensions: ['.js', 'jsx']
   },

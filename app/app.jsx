@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Greeter from 'Greeter';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Main from 'Main';
 
 ReactDOM.render(
-  <Greeter name="Spencer" message="Welcome"/>,
+  <Router>
+    <Route path="/" component={Main}>
+
+    </Route>
+  </Router>,
   document.getElementById('app')
 )
