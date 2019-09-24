@@ -7,8 +7,15 @@ var app = express();
 function handlePage(req, res){
   res.sendFile(__dirname + '/public/index.html');
 }
-app.get("/", handlePage);
-app.get("/about", handlePage);
+let handledRoutes = [
+  "/",
+  "/about",
+  "/examples"
+];
+
+for (let route in handledRoutes) {
+  app.get(route, handlePage);
+}
 
 // For other requests, statically serve public folder
 app.use(express.static('public'));
