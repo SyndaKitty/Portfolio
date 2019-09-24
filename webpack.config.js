@@ -10,9 +10,11 @@ module.exports = {
     alias: {
       Main: path.resolve(__dirname, 'app/components/main.jsx'),
       Nav: path.resolve(__dirname, 'app/components/nav.jsx'),
-      Weather: path.resolve(__dirname, 'app/components/weather.jsx'),
       About: path.resolve(__dirname, 'app/components/about.jsx'),
-      Examples: path.resolve(__dirname, 'app/components/examples.jsx')
+      Examples: path.resolve(__dirname, 'app/components/examples.jsx'),
+      Weather: path.resolve(__dirname, 'app/components/weather/weather.jsx'),
+      WeatherForm: path.resolve(__dirname, 'app/components/weather/weather-form.jsx'),
+      WeatherMessage: path.resolve(__dirname, 'app/components/weather/weather-message.jsx')
     },
     extensions: ['.js', 'jsx']
   },
