@@ -8,13 +8,13 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Main: path.resolve(__dirname, 'app/components/main.jsx'),
-      Nav: path.resolve(__dirname, 'app/components/nav.jsx'),
-      About: path.resolve(__dirname, 'app/components/about.jsx'),
-      Examples: path.resolve(__dirname, 'app/components/examples.jsx'),
-      Weather: path.resolve(__dirname, 'app/components/weather/weather.jsx'),
-      WeatherForm: path.resolve(__dirname, 'app/components/weather/weather-form.jsx'),
-      WeatherMessage: path.resolve(__dirname, 'app/components/weather/weather-message.jsx')
+      Main: path.resolve(__dirname, 'app/components/Main.jsx'),
+      Nav: path.resolve(__dirname, 'app/components/Nav.jsx'),
+      About: path.resolve(__dirname, 'app/components/About.jsx'),
+      Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
+      Weather: path.resolve(__dirname, 'app/components/weather/Weather.jsx'),
+      WeatherForm: path.resolve(__dirname, 'app/components/weather/WeatherForm.jsx'),
+      WeatherMessage: path.resolve(__dirname, 'app/components/weather/WeatherMessage.jsx')
     },
     extensions: ['.js', 'jsx']
   },
