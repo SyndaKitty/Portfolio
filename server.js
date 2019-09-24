@@ -13,9 +13,7 @@ let handledRoutes = [
   "/examples"
 ];
 
-for (let route in handledRoutes) {
-  app.get(route, handlePage);
-}
+handledRoutes.forEach(route => app.get(route, handlePage));
 
 // For other requests, statically serve public folder
 app.use(express.static('public'));
